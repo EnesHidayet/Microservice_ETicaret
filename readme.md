@@ -62,3 +62,8 @@
 
     Application Properties (yml) için gerek gerekli configler.
     https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html
+
+    AA - "ghp_RHY
+    BB - SaksS7yrKhH
+    CC - BenbmblfQry
+    DD - WOY4X0bFOnE"

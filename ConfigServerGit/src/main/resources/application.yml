@@ -8,8 +8,8 @@ spring:
     config:
       server:
         git:
-          uri: ""
-          default-label: ""
+          uri: "https://github.com/EnesHidayet/ConfigServer.git"
+          default-label: "main"
           skip-ssl-validation: true
-          username: ""
-          password: ""
+          username: "EnesHidayet"
+          password:
