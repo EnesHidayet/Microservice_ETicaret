@@ -1,0 +1,26 @@
+server:
+  port: 9094
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: UserProfile
+      username: bilgeUser
+      password: bilgeUser*
+
+logging:
+  level:
+    org.springframework: info
+    org.enes: info
+  #file:
+    #name: user-service.log
+
+
+userservice:
+  deger1: "1.Değer"
+  deger2: "2. Değer"
+  listem:
+    bir: "bu ilk değer"
+    iki: "bu ikinci değer"
