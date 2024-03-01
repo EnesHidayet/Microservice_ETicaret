@@ -9,6 +9,7 @@ import org.enes.entity.Auth;
 import org.enes.exception.AuthServiceException;
 import org.enes.exception.ErrorType;
 import org.enes.service.AuthService;
+import org.enes.utility.JwtTokenManager;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,6 +25,7 @@ import static org.enes.constants.RestApiUrl.*;
 @RequestMapping(AUTH)
 public class AuthController {
     private final AuthService authService;
+    private final JwtTokenManager jwtTokenManager;
 
     @PostMapping(REGISTER)
     public ResponseEntity<Boolean> register(@RequestBody @Valid RegisterRequestDto registerRequestDto){
@@ -31,11 +33,13 @@ public class AuthController {
     }
 
     @PostMapping(LOGIN)
-    public ResponseEntity<Auth> login(@RequestBody @Valid LoginRequestDto loginRequestDto){
+    public ResponseEntity<String> login(@RequestBody @Valid LoginRequestDto loginRequestDto){
         Optional<Auth> auth = authService.doLogin(loginRequestDto);
-        if (auth.isEmpty()){
+        if (auth.isEmpty())
             throw new AuthServiceException(ErrorType.ERROR_INVALID_LOGIN_PARAMETER);
-        }
-        return ResponseEntity.ok(auth.get());
+        Optional<String> token = jwtTokenManager.createToken(auth.get().getId());
+        if (token.isEmpty())
+            throw new AuthServiceException(ErrorType.ERROR_CREATE_TOKEN);
+        return ResponseEntity.ok(token.get());
     }
 }

@@ -18,7 +18,9 @@ public enum ErrorType {
 
     ERROR_INVALID_LOGIN_PARAMETER(2001,"Kullanıcı adı ya da şifre hatalıdır.Lütfen tekrar deneyiniz.",HttpStatus.BAD_REQUEST),
 
-    ERROR_INVALID_USER_ID(2003,"Kullanıcı id geçersiz.Böyle bir id li kullanıcı olmadığı için güncelleme yapılamamıştır.",HttpStatus.BAD_REQUEST);
+    ERROR_INVALID_USER_ID(2003,"Kullanıcı id geçersiz.Böyle bir id li kullanıcı olmadığı için güncelleme yapılamamıştır.",HttpStatus.BAD_REQUEST),
+
+    INVALID_TOKEN(1002,"Geçersiz token bilgisi" ,HttpStatus.BAD_REQUEST );
 
 
 

@@ -2,6 +2,12 @@ server:
   port: 9090
 
 spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: root
+
   datasource:
     url: jdbc:postgresql://localhost:5432/AuthDB
     username: postgres

@@ -16,6 +16,8 @@ public enum ErrorType {
 
     BAD_REQUEST_ERROR(1001,"Girilen parametreler hatalıdır.Lütfen düzelterek tekrar deneyiniz.",HttpStatus.BAD_REQUEST),
 
+    ERROR_CREATE_TOKEN(1003,"Token oluşturma hatası.Lütfen tekrar deneyiniz.",HttpStatus.INTERNAL_SERVER_ERROR),
+
     ERROR_INVALID_LOGIN_PARAMETER(2001,"Kullanıcı adı ya da şifre hatalıdır.Lütfen tekrar deneyiniz.",HttpStatus.BAD_REQUEST);
 
 
