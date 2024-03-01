@@ -191,16 +191,3 @@ spring:
     ayağa kalkarken kendisine tahsis edilen Volume a bağlanarak verilerini oradan çekebilir.
     
 
-##  
-    AA - "ghp_RHY
-    BB - SaksS7yrKhH
-    CC - BenbmblfQry
-    DD - WOY4X0bFOnE"
-
-## BİR PROGRAMCI NELERİ ANADİLİ GİBİ BİLMEK ZORUNDA
-    - OOP VE AOP
-    - DATA STRUCTURES
-    - ALGORTHMS
-    - DEBUGGİNG
-    - JAVA STREAM API
-    - DESİGN PATTERNS

@@ -1,0 +1,10 @@
+
+r	java:S116"XRename this field "EXCHANGE_AUTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àá‘÷ûÿÿÿÿ
+p	java:S116"[Rename this field "BINDING_KEY_AUTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°¯Ü
+j	java:S116"URename this field "QUEUE_AUTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÉÌß
+<
+java:S1170"!Make this final field static too.(àá‘÷ûÿÿÿÿ
+7
+java:S1170"!Make this final field static too.(°¯Ü
+7
+java:S1170"!Make this final field static too.(ÆÉÌß

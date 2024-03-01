@@ -1,0 +1,16 @@
+
+i	java:S116"TRename this field "SECRETKEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Åà
+f	java:S116"QRename this field "ISSUER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿÎ°
+k	java:S116"QRename this field "EXDATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•‘ÇÕùÿÿÿÿ
+7
+java:S1170"!Make this final field static too.(™Åà
+7
+java:S1170"!Make this final field static too.(ÿÎ°
+<
+java:S1170"!Make this final field static too.(•‘ÇÕùÿÿÿÿ
+Q
+java:S6437 "6Revoke and change this password, as it is compromised.(‹ÇÈØúÿÿÿÿ
+E	java:S106#"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ
+L
+java:S64372"6Revoke and change this password, as it is compromised.(øšœ
+E	java:S106;"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ
